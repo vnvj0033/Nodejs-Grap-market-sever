@@ -94,7 +94,7 @@ app.get("/products/:id", (req, res) => {
   })
     .then((result) => {
       console.log("PRODUCT : ", result);
-      res.send({ products: result });
+      res.send({ product: result });
     })
     .catch((error) => {
       console.error(error);
